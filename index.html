@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Let's set up your account</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="container">
+    <section class="login">
+      <div class="login__steps">
+        <span>Step 1 of 3</span>
+        <ul class="login__steps-bullets">
+          <li class="login__step login__step--active"></li>
+          <li class="login__step"></li>
+          <li class="login__step"></li>
+        </ul>
+      </div>
+      <div class="login__container">
+        <h1 class="login__title">Let's set up your account</h1>
+        <p class="login__subtitle">Already have an account? <a href="#">Sign in</a></p>
+        <form action="/login" method="POST">
+          <div class="login__field">
+            <input class="login__input" type="text" name="name" title="Your name" aria-label="Your name" placeholder="Your name" required />
+            <label class="login__label" for="name">Your name</label>
+          </div>
+          <div class="login__error"></div>
+          <div class="login__field">
+            <input class="login__input" type="email" name="email" title="Email address" aria-label="Email address" placeholder="Email address" required />
+            <label class="login__label" for="email">Email address</label>
+          </div>
+          <div class="login__error"></div>
+          <div class="login__field">
+            <select class="login__input">
+              <option selected disabled>I would describe my user type as</option>
+              <option>Developer</option>
+              <option>Designer</option>
+              <option>Manager</option>
+            </select>
+          </div>
+          <div class="login__field">
+            <input class="login__input" type="password" name="password" title="Password" aria-label="Password" placeholder="Password" required minlength="8" />
+            <label class="login__label" for="password">Password</label>
+            <div class="login__field-password-reveal">&#128065;</div>
+          </div>
+          <div class="login__error"></div>
+          <span class="login__text-small">Minimum 8 characters</span>
+          <input class="login__button" type="submit" value="Next" title="Next" aria-label="Next" disabled />
+          <div class="terms">
+            <p class="terms__text">By clicking "Next" button, you agree to creating a free account, and to <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="login-side">
+      <h1 class="login-side__heading">Dummy Heading</h1>
+      <p class="login-side__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+  </div>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
